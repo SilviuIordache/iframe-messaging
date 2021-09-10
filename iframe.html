@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    <h3>The iFrame window</h3>
+    <div class="big-container">
+      <div class="card">
+        <p>Message received from parent window:</p>
+        <p id="receivedMessage">''</p>
+      </div>
+      <div class="card">
+        <p>Send message up to the parent window ↑</p>
+        <input id="iFrameMessage" type="text" placeholder="write a message..">
+        <button onclick="sendMessageToParent()">Send</button>
+      </div>
+    </div>
+    <script src="./src/iframe.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.big-container {
+  display: flex;
+  justify-content: start;
+}
+
+.card {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 12px;
+  display: inline-block;
+  margin-right: 5px
+}
+
+iframe {
+  margin-top: 10px;
+}
