@@ -1,12 +1,8 @@
-
 let iFrameDocument;
 
-// wrapping iFrame referencing in a function
 // calling this function only when the iFrame is done loading
-function getIFrameReference() {
-  // iFrame reference
+function initIFrameReference() {
   const iFrame = document.getElementById('my-iframe');
-  // iFrame document reference
   iFrameDocument = iFrame.contentDocument;
 
   // listener for messages from the iFrame
@@ -25,7 +21,6 @@ function getIFrameReference() {
 // send message down to iFrame
 function sendMessage() {
   const iFrameMessage = iFrameDocument.getElementById('receivedMessage');
-
   let newMessage = document.getElementById('windowMessage');
   iFrameMessage.innerHTML = newMessage.value;
   // reset input 
